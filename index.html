@@ -189,7 +189,7 @@
         <hr>
         <div class="button-container">
             <button onclick="window.location.href = '/';">Home</button>
-            <button onclick="window.location.href = '{{ url_for('color_html') }}';">Let's go!</button>
+            <button id="colorButton">Let's go!</button>
         </div>
         <hr>
     </div>
@@ -238,6 +238,9 @@
     </div>
 
     <script>
+        document.getElementById('colorButton').onclick = function() {
+            window.location.href = "{{ url_for('color_html') }}";
+        };
         function toggleAnswer(id) {
             var answer = document.getElementById("answer-" + id);
             var button = document.querySelector("#answer-" + id + " .qa-button");
