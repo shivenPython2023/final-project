@@ -366,7 +366,7 @@ def index():
 
 
 @app.route('/color.html', methods=['GET', 'POST'])
-@app.route('/final-project/color', methods=['GET', 'POST'])
+@app.route('/color', methods=['GET', 'POST'])
 def color_html():
     if request.method == 'POST':
         if 'file' not in request.files:
