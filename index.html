@@ -188,7 +188,7 @@
     <div class="horizontal-line">
         <hr>
         <div class="button-container">
-            <button onclick="window.location.href = '/final-project/color.html';">Let's go!</button>
+            <button onclick="window.location.href = '/final-project/templates/color.html';">Let's go!</button>
             <button id="colorButton">Let's go!</button>
         </div>
         <hr>
@@ -238,9 +238,6 @@
     </div>
 
     <script>
-        document.getElementById('colorButton').onclick = function() {
-            window.location.href = "{{ url_for('color_html') }}";
-        };
         function toggleAnswer(id) {
             var answer = document.getElementById("answer-" + id);
             var button = document.querySelector("#answer-" + id + " .qa-button");
